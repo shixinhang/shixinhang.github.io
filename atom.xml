@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>4Y | Vision</title>
-  <subtitle>Photography as Art</subtitle>
+  <title>Photography as Art</title>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shixinhang.top/"/>
-  <updated>2017-05-07T23:47:26.985Z</updated>
+  <updated>2017-05-10T11:17:10.397Z</updated>
   <id>http://shixinhang.top/</id>
   
   <author>
@@ -16,43 +16,52 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>What is 4Y Vision?</title>
-    <link href="http://shixinhang.top/2017/05/08/What-is-4Y-Vision/"/>
-    <id>http://shixinhang.top/2017/05/08/What-is-4Y-Vision/</id>
-    <published>2017-05-07T23:47:26.000Z</published>
-    <updated>2017-05-07T23:47:26.985Z</updated>
+    <title>如何将Hexo生成的TOC导入Mindjet MindManager？</title>
+    <link href="http://shixinhang.top/2017/05/10/how-to-import-hierarchical-text-into-mindmanager/"/>
+    <id>http://shixinhang.top/2017/05/10/how-to-import-hierarchical-text-into-mindmanager/</id>
+    <published>2017-05-10T10:49:00.000Z</published>
+    <updated>2017-05-10T11:17:10.397Z</updated>
     
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://shixinhang.top/2017/05/08/hello-world/"/>
-    <id>http://shixinhang.top/2017/05/08/hello-world/</id>
-    <published>2017-05-07T23:14:55.325Z</published>
-    <updated>2017-05-07T23:14:55.325Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <content type="html"><![CDATA[<p>使用Markdown书写可以很方便的将文档发布到Wiz，Hexo，Wiki乃至GitBook或简书。</p>
+<p>之所以使用Hexo作为个人艺术知识库，是因为Hexo的简洁（阅读友好），静态（加载速度飞快）以及由md文档生成的TOC支持。</p>
+<p>现在大多数Hexo主题都支持TOC的生成与显示，为了更加方便快捷的将目录整合到MindMap中，笔者摸索出了这一套方法，现分享出来，以便复用经验，提高工作效率。</p>
+<a id="more"></a>
+<h2 id="将Hexo的TOC复制到Word文档"><a href="#将Hexo的TOC复制到Word文档" class="headerlink" title="将Hexo的TOC复制到Word文档"></a>将Hexo的TOC复制到Word文档</h2><p>简单的复制/粘贴操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Ctrl/Command + C &amp; Ctrl/Command + V</div></pre></td></tr></table></figure>
+<p>此时确保Word自动添加序号的功能开启，因为没有Word添加序号，MindManager无法识别文本层次结构。复制到Word文档中的文本看起来大概是这样子的：</p>
+<p><img src="/images/pasted-0.png" alt="图1"></p>
+<p>可以看到位于页面最左端的序号是Word中有效的序号，而其后的只是序号形式的文本。</p>
+<p>接下来我们需要处理有效序号后文本项目中的假“序号”。</p>
+<h2 id="处理文本项目中的假“序号”"><a href="#处理文本项目中的假“序号”" class="headerlink" title="处理文本项目中的假“序号”"></a>处理文本项目中的假“序号”</h2><p>按下键盘快捷键<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Ctrl/Command + H</div></pre></td></tr></table></figure></p>
+<p>打开Word的替换窗口，勾选[使用通配符]选项，输入如下正则表达式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[0-9]\.</div></pre></td></tr></table></figure>
+<p><img src="/images/pasted-1.png" alt="图2"></p>
+<p>然后点击[全部替换]，即可完成任务。该正则表达式对于3级数字序号&gt;9的情况，文本替换实现的不是很完美，但由于三级数字序号&gt;9的情况较少，工作量很小，暂时先使用这一正则表达式。</p>
+<p>完成替换后删除一些可能的多余字符，保留Word自动生成的数字序号。文本处理的工作到此结束。</p>
+<h2 id="将文本发送至MindManager"><a href="#将文本发送至MindManager" class="headerlink" title="将文本发送至MindManager"></a>将文本发送至MindManager</h2><p>快捷键全选刚才处理好的文本。如果计算机中安装了Mindjet MindManager及其Word插件，那么在Word工具栏最右端就会出现[Send to MindManager]按钮。点击按钮将层次化文本发送到MindManager。</p>
+<p>最终成果如下图所示：</p>
+<p><img src="/images/pasted-2.png" alt="图3"></p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>使用Markdown书写、编辑文本，能够让文本在最小修改限度实现最大的文本复用，从而进一步优化了我们的知识管理工作流程和效率。</p>
+<p>最后，真诚的推荐<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Markdown + Wiz + Hexo + GitBook/简书</div></pre></td></tr></table></figure></p>
+<p>这一知识管理工具组合，在下一篇文章中，我会介绍这些工具并详细讲述个人的知识管理工作流程。</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;使用Markdown书写可以很方便的将文档发布到Wiz，Hexo，Wiki乃至GitBook或简书。&lt;/p&gt;
+&lt;p&gt;之所以使用Hexo作为个人艺术知识库，是因为Hexo的简洁（阅读友好），静态（加载速度飞快）以及由md文档生成的TOC支持。&lt;/p&gt;
+&lt;p&gt;现在大多数Hexo主题都支持TOC的生成与显示，为了更加方便快捷的将目录整合到MindMap中，笔者摸索出了这一套方法，现分享出来，以便复用经验，提高工作效率。&lt;/p&gt;
     
     </summary>
     
+      <category term="Tool" scheme="http://shixinhang.top/categories/Tool/"/>
+    
+    
+      <category term="Markdown" scheme="http://shixinhang.top/tags/Markdown/"/>
+    
+      <category term="Mindmap" scheme="http://shixinhang.top/tags/Mindmap/"/>
+    
+      <category term="Knowledge Management" scheme="http://shixinhang.top/tags/Knowledge-Management/"/>
     
   </entry>
   
