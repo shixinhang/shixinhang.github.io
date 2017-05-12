@@ -3,6 +3,50 @@
   
     
     <entry>
+      <title><![CDATA[《图画史》阅读笔记]]></title>
+      <url>/2017/05/12/a-history-of-pictures-note/</url>
+      <content type="html"><![CDATA[<h2 id="导论：图画、艺术与历史"><a href="#导论：图画、艺术与历史" class="headerlink" title="导论：图画、艺术与历史"></a>导论：图画、艺术与历史</h2><blockquote>
+<p>毕加索的猫头鹰记述了一个人对猫头鹰的观看</p>
+<p>一切图画都是对观看的记述</p>
+</blockquote>
+<p>图画是对个体观看的记述。观看意味着知觉的参与，意味着想象力的萌发。那么，我们能否说：图画是对个体想象的记述？<br><a id="more"></a></p>
+<blockquote>
+<p>图画史，讲述人类几千年来是如何对身边的世界进行视觉再现的，以及我们今天对这一切的看法又是如何。</p>
+</blockquote>
+<p>…</p>
+<blockquote>
+<p>图画所带来的问题永远不变，这就是用二维平面描绘世界的问题，所谓永远不变，就意味着永远无法解决。</p>
+</blockquote>
+<p>…..</p>
+<h2 id="图画与现实"><a href="#图画与现实" class="headerlink" title="图画与现实"></a>图画与现实</h2><blockquote>
+<p>照片是不是让世界看起来更乏味？我认为照片确实存在这些问题，因为它的世界和我们所处的世界是分开的。照相机按照几何学的方式观看，而我们按照心理学的方式观看。</p>
+</blockquote>
+<p>如何建构摄影影像的心理学观看？摄影媒介在当代艺术中的局限性是什么？如何突破？</p>
+<blockquote>
+<p>艺术并没有进步。最好的图画有些就是最早的一批画。艺术家个人可能在发展，因为生活在变化，但艺术本身并不发展，因此原始”艺术这个概念是错的，因为它假设艺术在进步。</p>
+</blockquote>
+<p>…</p>
+<blockquote>
+<p>“你告诉我取景时要看着边界而不是中心，我觉得这是最起码的，是第一注意事项，绘画构图也是一样。”边界对卡蒂埃一布列松尤其重要，因为他取景时故意不裁切掉任何物体，他要确保照片的效果和他的取景效果一样。</p>
+</blockquote>
+<h2 id="笔痕"><a href="#笔痕" class="headerlink" title="笔痕"></a>笔痕</h2>]]></content>
+      
+        <categories>
+            
+            <category> Art </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Reading </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[如何将Hexo生成的TOC导入Mindjet MindManager？]]></title>
       <url>/2017/05/10/how-to-import-hierarchical-text-into-mindmanager/</url>
       <content type="html"><![CDATA[<p>使用Markdown书写可以很方便的将文档发布到Wiz，Hexo，Wiki乃至GitBook或简书。</p>
@@ -41,8 +85,6 @@
             <tag> Markdown </tag>
             
             <tag> Mindmap </tag>
-            
-            <tag> Knowledge Management </tag>
             
         </tags>
         
